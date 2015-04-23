@@ -6,17 +6,13 @@
   </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(ProjectDir)Output\Binaries\$(Configuration)\</OutDir>
-    <IncludePath>$(SolutionDir)References\include;$(ProjectDir)Include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)References\include;$(ProjectDir)Include;$(SolutionDir)..;$(IncludePath)</IncludePath>
     <LibraryPath>$(IncludePath);$(SolutionDir)References\lib\x86;$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
     <IntDir>$(ProjectDir)Output\Immediate\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-    </Link>
-    <ClCompile>
-      <PreprocessorDefinitions>_WIN32;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
+    <Link />
+    <ClCompile />
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
