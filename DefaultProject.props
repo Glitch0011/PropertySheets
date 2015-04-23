@@ -6,7 +6,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(ProjectDir)Output\Binaries\$(Configuration)\</OutDir>
-    <IncludePath>$(SolutionDir)References\include;$(ProjectDir)Include;$(SolutionDir)..;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)References\include;$(ProjectDir)Include;$(SolutionDir)..;$(SolutionDir)UnitTestFramework;$(IncludePath)</IncludePath>
     <LibraryPath>$(IncludePath);$(SolutionDir)References\lib\x86;$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
     <IntDir>$(ProjectDir)Output\Immediate\$(Configuration)\</IntDir>
   </PropertyGroup>
